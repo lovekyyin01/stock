@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HK Stock Info</title>
+</head>
+<body>
+    <h2>Hong Kong Stock Table</h2>
+    <form method="POST">
+        <table border="1">
+            <tr>
+                <td>🏦 Bank Input</td>
+                <td><input name="stock_no" placeholder="Stock No"></td>
+                <td><input name="name" placeholder="Name"></td>
+                <td><input name="price" placeholder="Price"></td>
+                <td><input name="amount" placeholder="Amount"></td>
+            </tr>
+            <tr>
+                <td>📈 Stock Data</td>
+                <td>{{ stock_data.stock_no }}</td>
+                <td>{{ stock_data.name }}</td>
+                <td>{{ stock_data.price }}</td>
+                <td>{{ stock_data.amount }}</td>
+            </tr>
+            <tr>
+                <td>⏱️ Time Save</td>
+                <td><input placeholder="Stock No"></td>
+                <td><input placeholder="Name"></td>
+                <td><input placeholder="Price"></td>
+                <td><input placeholder="Amount"></td>
+            </tr>
+        </table>
+        <br/>
+        <button type="submit">Fetch Stock</button>
+    </form>
+</body>
+</html>
